@@ -45,7 +45,7 @@ focus_tree = {
 		y = 1
 		x = 0
 		relative_position_id = POL_Thanos
-		cost = 10
+		cost = 5
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
@@ -64,7 +64,7 @@ focus_tree = {
 		y = 1
 		x = -6
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
@@ -87,7 +87,7 @@ focus_tree = {
 		y = 1
 		x = -4
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		ai_will_do = { factor = 2 }
 		available = {}
 		completion_reward = {
@@ -110,7 +110,7 @@ focus_tree = {
 		y = 1
 		x = -2
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		ai_will_do = { factor = 2 }
 		available = {}
 		completion_reward = {
@@ -133,7 +133,7 @@ focus_tree = {
 		y = 1
 		x = 0
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		ai_will_do = { factor = 2 }
 		available = {}
 		completion_reward = {
@@ -156,7 +156,7 @@ focus_tree = {
 		y = 1
 		x = 2
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		ai_will_do = { factor = 2 }
 		available = {}
 		completion_reward = {
@@ -179,7 +179,7 @@ focus_tree = {
 		y = 1
 		x = 4
 		relative_position_id = POL_Infinity_Stones
-		cost = 3
+		cost = 10
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
