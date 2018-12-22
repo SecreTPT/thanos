@@ -1287,4 +1287,24 @@ spriteTypes = {
 		name = "GFX_yellow_infinity_stone"
 		texturefile = "gfx/interface/goals/yellow_infinity_stone.dds"
 	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_military_tank"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_tank.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_military_car"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_car.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_military_plane"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_plane.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_military_boat"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_boat.dds"
+	}
 }
