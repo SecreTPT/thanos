@@ -365,7 +365,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				category = armor
 			}
 		}
@@ -391,6 +391,12 @@ focus_tree = {
 				technology = advanced_submarine_warfare
 				technology = combined_operations_raiding
 			}
+			add_tech_bonus = {
+				name = tp_tech
+				bonus = 0.5
+				uses = 3
+				category = tp_tech
+			}
 		}
 	}
 	focus = {
@@ -407,7 +413,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				technology = early_fighter
 				technology = fighter1
 				technology = fighter2
