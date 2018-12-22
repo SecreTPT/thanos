@@ -12,18 +12,30 @@ focus_tree = {
 	focus = {
 		id = POL_Thanos
 		icon = GFX_goal_poland_thanos
-		x = 4
+		x = 8
 		y = 0
 		cost = 2
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
-			add_popularity = {
-			    ideology = fascism
-			    popularity = 1
-			}
+			#add_popularity = {
+			#    ideology = fascism
+			#    popularity = 1
+			#}
+			#add_offsite_building = { type = arms_factory level = 2 }
+			#retire_country_leader = yes
+			#create_country_leader = {
+			#	name = "Fascist Thanos"
+			#	desc = ""
+			#	picture = "Portrait_Poland_THANOS.dds"
+			#	expire = "1969.1.1"
+			#	ideology = falangism
+			#	traits = {
+			#		
+			#	}
+			#}
+			#hold_election = POL
 			add_political_power = 100
-			add_offsite_building = { type = arms_factory level = 2 }
 		}
 	}
 	focus = {
@@ -43,16 +55,6 @@ focus_tree = {
 			    state = 10
 			}
 			add_manpower = 100000
-			create_field_marshal = {
-				name = "Thanos"
-				picture = "Portrait_Poland_THANOS.dds"
-				traits = { defensive_doctrine }
-				skill = 10
-				attack_skill = 10
-				defense_skill = 10
-				planning_skill = 10
-				logistics_skill = 10
-			}
 		}
 	}
 	focus = {
@@ -60,7 +62,7 @@ focus_tree = {
 		icon = GFX_blue_infinity_stone
 		prerequisite = { focus = POL_Infinity_Stones }
 		y = 1
-		x = -2
+		x = -6
 		relative_position_id = POL_Infinity_Stones
 		cost = 3
 		available = {}
@@ -83,7 +85,7 @@ focus_tree = {
 		icon = GFX_green_infinity_stone
 		prerequisite = { focus = POL_Infinity_Stones }
 		y = 1
-		x = -1
+		x = -4
 		relative_position_id = POL_Infinity_Stones
 		cost = 3
 		ai_will_do = { factor = 2 }
@@ -106,7 +108,7 @@ focus_tree = {
 		icon = GFX_orange_infinity_stone
 		prerequisite = { focus = POL_Infinity_Stones }
 		y = 1
-		x = 0
+		x = -2
 		relative_position_id = POL_Infinity_Stones
 		cost = 3
 		ai_will_do = { factor = 2 }
@@ -129,7 +131,7 @@ focus_tree = {
 		icon = GFX_pink_infinity_stone
 		prerequisite = { focus = POL_Infinity_Stones }
 		y = 1
-		x = 1
+		x = 0
 		relative_position_id = POL_Infinity_Stones
 		cost = 3
 		ai_will_do = { factor = 2 }
@@ -175,7 +177,7 @@ focus_tree = {
 		icon = GFX_yellow_infinity_stone
 		prerequisite = { focus = POL_Infinity_Stones }
 		y = 1
-		x = 3
+		x = 4
 		relative_position_id = POL_Infinity_Stones
 		cost = 3
 		available = {}
@@ -186,6 +188,222 @@ focus_tree = {
 			create_wargoal = {
 			    type = puppet_wargoal_focus
 			    target = ROM
+			}
+		}
+	}
+	#################
+	#Politics Thanos#
+	#################
+	focus = {
+		id = POL_Politics_Thanos
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Thanos }
+		y = 1
+		x = 8
+		relative_position_id = POL_Thanos
+		cost = 5
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = POL_Politics_Thanos_Fascist
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Politics_Thanos }
+		y = 1
+		x = 2
+		relative_position_id = POL_Politics_Thanos
+		mutually_exclusive = { focus = POL_Politics_Thanos_Communist }
+		mutually_exclusive = { focus = POL_Politics_Thanos_Democratic }
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 1
+			}
+			#retire_country_leader = yes
+			create_country_leader = {
+				name = "Fascist Thanos"
+				desc = ""
+				picture = "Portrait_Poland_THANOS_Fascist.dds"
+				expire = "1969.1.1"
+				ideology = falangism
+				traits = {}
+			}
+			hold_election = POL
+		}
+	}
+	focus = {
+		id = POL_Politics_Thanos_Communist
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Politics_Thanos }
+		y = 1
+		x = -2
+		relative_position_id = POL_Politics_Thanos
+		mutually_exclusive = { focus = POL_Politics_Thanos_Fascist }
+		mutually_exclusive = { focus = POL_Politics_Thanos_Democratic }
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = communism
+			    popularity = 1
+			}
+			#retire_country_leader = yes
+			create_country_leader = {
+				name = "Communist Thanos"
+				desc = ""
+				picture = "Portrait_Poland_THANOS_Communist.dds"
+				expire = "1969.1.1"
+				ideology = marxism
+				traits = {}
+			}
+			hold_election = POL
+		}
+	}
+	focus = {
+		id = POL_Politics_Thanos_Democratic
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Politics_Thanos }
+		y = 1
+		x = 0
+		relative_position_id = POL_Politics_Thanos
+		mutually_exclusive = { focus = POL_Politics_Thanos_Communist }
+		mutually_exclusive = { focus = POL_Politics_Thanos_Fascist }
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = democratic
+			    popularity = 1
+			}
+			#retire_country_leader = yes
+			create_country_leader = {
+				name = "Democratic Thanos"
+				desc = ""
+				picture = "Portrait_Poland_THANOS_Democratic.dds"
+				expire = "1969.1.1"
+				ideology = conservatism
+				traits = {}
+			}
+			hold_election = POL
+		}
+	}
+	#################
+	#Military Thanos#
+	#################
+	focus = {
+		id = POL_Military_Thanos
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Thanos }
+		y = 1
+		x = 14
+		relative_position_id = POL_Thanos
+		cost = 5
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			create_field_marshal = {
+				name = "Thanos"
+				picture = "Portrait_Poland_THANOS_Military.dds"
+				traits = { defensive_doctrine }
+				skill = 9
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+		}
+	}
+	focus = {
+		id = POL_Military_Thanos_Car
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Military_Thanos }
+		y = 1
+		x = -2
+		relative_position_id = POL_Military_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				uses = 3
+				technology = motorised_infantry
+			}
+		}
+	}
+	focus = {
+		id = POL_Military_Thanos_Tank
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Military_Thanos_Car }
+		y = 1
+		x = 0
+		relative_position_id = POL_Military_Thanos_Car
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = POL_Military_Thanos_Boat
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Military_Thanos }
+		y = 1
+		x = 2
+		relative_position_id = POL_Military_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+		}
+	}
+	focus = {
+		id = POL_Military_Thanos_Plane
+		icon = GFX_goal_poland_thanos
+		prerequisite = { focus = POL_Military_Thanos }
+		y = 1
+		x = 0
+		relative_position_id = POL_Military_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
 			}
 		}
 	}

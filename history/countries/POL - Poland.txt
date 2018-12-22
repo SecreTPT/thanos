@@ -184,9 +184,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "THANOS"
-	desc = "POLITICS_THANOS_DESC"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Władysław Sikorski"
+	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -195,9 +195,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "THANOS"
-	desc = "POLITICS_THANOS_DESC"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Ignacy Mościcki"
+	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -206,9 +206,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "THANOS"
-	desc = "POLITICS_THANOS_DESC"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Władysław Gomułka"
+	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -217,9 +217,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "THANOS"
-	desc = "POLITICS_THANOS_DESC"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Wincenty Witos"
+	desc = "POLITICS_WINCENTY_WITOS_DESC"
+	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -228,9 +228,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "THANOS"
-	desc = "POLITICS_THANOS_DESC"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Bolesław Piasecki"
+	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
+	picture = "GFX_POL_boleslaw_piasecki"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
@@ -239,8 +239,8 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "THANOS"
-	picture = "Portrait_Poland_THANOS.dds"
+	name = "Władysław Sikorski"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
 	traits = { defensive_doctrine }
 	skill = 3
 	attack_skill = 2
@@ -303,7 +303,6 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 3
 }
-
 create_equipment_variant = {
 	name = "PZL P.24"
 	type = fighter_equipment_0
