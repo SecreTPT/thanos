@@ -225,6 +225,10 @@ focus_tree = {
 			    ideology = fascism
 			    popularity = 1
 			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+			}
 			#retire_country_leader = yes
 			create_country_leader = {
 				name = "Fascist Thanos"
@@ -234,7 +238,7 @@ focus_tree = {
 				ideology = falangism
 				traits = {}
 			}
-			hold_election = POL
+			#hold_election = POL
 		}
 	}
 	focus = {
@@ -254,6 +258,10 @@ focus_tree = {
 			    ideology = communism
 			    popularity = 1
 			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
 			#retire_country_leader = yes
 			create_country_leader = {
 				name = "Communist Thanos"
@@ -263,7 +271,6 @@ focus_tree = {
 				ideology = marxism
 				traits = {}
 			}
-			hold_election = POL
 		}
 	}
 	focus = {
@@ -283,6 +290,10 @@ focus_tree = {
 			    ideology = democratic
 			    popularity = 1
 			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 			#retire_country_leader = yes
 			create_country_leader = {
 				name = "Democratic Thanos"
@@ -292,7 +303,7 @@ focus_tree = {
 				ideology = conservatism
 				traits = {}
 			}
-			hold_election = POL
+			#hold_election = POL
 		}
 	}
 	#################
