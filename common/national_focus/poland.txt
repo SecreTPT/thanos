@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = POL_Thanos
 		icon = GFX_goal_poland_thanos
-		x = 0
+		x = 4
 		y = 0
 		cost = 2
 		completion_reward = {
@@ -46,6 +46,128 @@ focus_tree = {
 				defense_skill = 10
 				planning_skill = 10
 				logistics_skill = 10
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Blue
+		icon = GFX_blue_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = -2
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_resource = {
+			    type = steel
+			    amount = 10
+			    state = any_owned_state 
+			}
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = LIT
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Green
+		icon = GFX_green_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = -1
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_resource = {
+			    type = rubber
+			    amount = 10
+			    state = any_owned_state 
+			}
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = LAT
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Orange
+		icon = GFX_orange_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = 0
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_resource = {
+			    type = aluminium
+			    amount = 10
+			    state = any_owned_state 
+			}
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = EST
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Pink
+		icon = GFX_pink_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = 1
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_resource = {
+			    type = tungsten
+			    amount = 10
+			    state = any_owned_state 
+			}
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = CZE
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Purple
+		icon = GFX_purple_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = 2
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_resource = {
+			    type = chromium
+			    amount = 10
+			    state = any_owned_state 
+			}
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = HUN
+			}
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Yellow
+		icon = GFX_yellow_infinity_stone
+		prerequisite = { focus = POL_Infinity_Stones }
+		y = 1
+		x = 3
+		relative_position_id = POL_Infinity_Stones
+		cost = 3
+		completion_reward = {
+			add_research_slot = 1
+			add_manpower = 5000
+			create_wargoal = {
+			    type = puppet_wargoal_focus
+			    target = ROM
 			}
 		}
 	}
