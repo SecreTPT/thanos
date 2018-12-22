@@ -334,7 +334,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Military_Thanos_Car
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_military_car
 		prerequisite = { focus = POL_Military_Thanos }
 		y = 1
 		x = -2
@@ -353,7 +353,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Military_Thanos_Tank
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_military_tank
 		prerequisite = { focus = POL_Military_Thanos_Car }
 		y = 1
 		x = 0
@@ -372,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Military_Thanos_Boat
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_military_boat
 		prerequisite = { focus = POL_Military_Thanos }
 		y = 1
 		x = 2
@@ -401,7 +401,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Military_Thanos_Plane
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_military_plane
 		prerequisite = { focus = POL_Military_Thanos }
 		y = 1
 		x = 0
