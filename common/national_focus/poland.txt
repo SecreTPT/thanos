@@ -1,0 +1,52 @@
+focus_tree = {
+	id = polish_focus
+	country = {
+		factor = 0
+		moddifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	default = no
+	focus = {
+		id = POL_Thanos
+		icon = GFX_goal_poland_thanos
+		x = 0
+		y = 0
+		cost = 2
+		completion_reward = {
+			set_political_party = {
+	    		ideology = fascism
+	   			popularity = 100
+			}
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones
+		icon = GFX_goal_poland_infinity_stones
+		prerequisite = { focus = POL_Thanos }
+		y = 1
+		x = 0
+		relative_position_id = POL_Thanos
+		cost = 10
+		completion_reward = {
+			add_resource = {
+			    type = oil
+			    amount = 50
+			    state = any_owned_state 
+			}
+			add_manpower = 100000
+			create_field_marshal = {
+				name = "Thanos"
+				picture = "Portrait_Poland_THANOS.dds"
+				traits = { defensive_doctrine }
+				skill = 10
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+		}
+	}
+}
