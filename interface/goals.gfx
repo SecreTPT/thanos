@@ -1310,16 +1310,16 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_communist"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_communist.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_communist.dds"
 	}
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_fascist"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_fascist.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_fascist.dds"
 	}
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_democratic"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_democratic.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_democratic.dds"
 	}
 }
