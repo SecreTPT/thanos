@@ -210,7 +210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Politics_Thanos_Fascist
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_fascist
 		prerequisite = { focus = POL_Politics_Thanos }
 		y = 1
 		x = 2
@@ -243,7 +243,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Politics_Thanos_Communist
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_communist
 		prerequisite = { focus = POL_Politics_Thanos }
 		y = 1
 		x = -2
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Politics_Thanos_Democratic
-		icon = GFX_goal_poland_thanos
+		icon = GFX_goal_poland_thanos_democratic
 		prerequisite = { focus = POL_Politics_Thanos }
 		y = 1
 		x = 0

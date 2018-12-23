@@ -1307,4 +1307,19 @@ spriteTypes = {
 		name = "GFX_goal_poland_thanos_military_boat"
 		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_boat.dds"
 	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_communist"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_communist.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_fascist"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_fascist.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_democratic"
+		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_democratic.dds"
+	}
 }
