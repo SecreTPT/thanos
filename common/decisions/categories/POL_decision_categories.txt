@@ -1,5 +1,6 @@
 Snaps = {
 	allowed = {
 		original_tag = POL
+		has_completed_focus = POL_Infinity_Stones_Collected
 	}
 }
