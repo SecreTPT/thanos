@@ -1,0 +1,236 @@
+Snaps = {
+
+Snap_defensive = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			FROM = {
+				NOT = {is_in_faction_with = ROOT} 
+				has_offensive_war = yes 
+				#is_justifying_wargoal_against = ROOT
+				has_war_with = ROOT
+			}
+		}
+
+		visible = {
+			FROM = {
+				NOT = {is_in_faction_with = ROOT} 
+				has_offensive_war = yes 
+				#is_justifying_wargoal_against = ROOT
+				has_war_with = ROOT
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = {is_in_faction_with = ROOT} 
+				has_offensive_war = yes 
+				#is_justifying_wargoal_against = ROOT
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = no
+		#days_remove = 1
+		days_re_enable = 7
+
+		cost = 75
+
+		modifier = {
+		}
+
+		complete_effect = {
+			FROM = {
+				add_manpower = -100000
+				#Remove Oil
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = oil
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = oil
+					    amount = -1
+					}
+				}
+				#Remove Steel
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = steel
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = steel
+					    amount = -1
+					}
+				}
+				#Remove Rubber
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = rubber
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = rubber
+					    amount = -1
+					}
+				}
+				#Remove Tungsten
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = tungsten
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = tungsten
+					    amount = -1
+					}
+				}
+				#
+				#any_owned_state = {
+				#	set_variable = { var_name = random }
+				#	limit = {
+				#		var_random > 0.5
+				#	}
+				#	add_resource = {
+				#	    type = rubber
+				#	    amount = -1
+				#	}
+				#}
+			}
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+Snap_offensive = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			FROM = {
+				NOT = {is_in_faction_with = ROOT} 
+				has_defensive_war = yes
+				has_war_with = ROOT
+			}
+		}
+
+		visible = {
+			FROM = {
+				#has_added_tension_amount > 5
+				NOT = {is_in_faction_with = ROOT} 
+				has_defensive_war = yes
+				has_war_with = ROOT
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_defensive_war = yes
+					}
+					has_war_with = ROOT
+				}
+			}
+		}
+		fire_only_once = no
+		#days_remove = 1
+		days_re_enable = 10
+
+		cost = 150
+
+		modifier = {
+		}
+
+		complete_effect = {
+			FROM = {
+				add_manpower = -100000
+				#Remove Oil
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = oil
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = oil
+					    amount = -1
+					}
+				}
+				#Remove Steel
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = steel
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = steel
+					    amount = -1
+					}
+				}
+				#Remove Rubber
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = rubber
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = rubber
+					    amount = -1
+					}
+				}
+				#Remove Tungsten
+				random_owned_state = {
+					limit = {
+						has_resources_amount = {
+						    resource = tungsten
+						    amount > 1
+						}
+					}
+					add_resource = {
+					    type = tungsten
+					    amount = -1
+					}
+				}
+				#
+				#any_owned_state = {
+				#	set_variable = { var_name = random }
+				#	limit = {
+				#		var_random > 0.5
+				#	}
+				#	add_resource = {
+				#	    type = rubber
+				#	    amount = -1
+				#	}
+				#}
+			}
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+}

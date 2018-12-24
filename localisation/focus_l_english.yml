@@ -36,6 +36,8 @@
  POL_Military_Thanos_Plane_desc:0 "Is that a bird? Is that a plane? Yep, it's a plane."
  POL_Military_Thanos_Tank:0 "Thanos Tank"
  POL_Military_Thanos_Tank_desc:0 "When I’m done, half of humanity will still exist."
+ POL_Infinity_Stones_Collected:0 "Infinity Glove"
+ POL_Infinity_Stones_Collected_desc:0 "Thanos found all of the Infinity Stones."
  army_effort_desc:0 "Despite the increasing possibilities of aerial and naval warfare, ground combat is still key in tomorrow's wars. With preparation, we can avoid reliving the hell of the trenches."
  equipment_effort:0 "Equipment Effort"
  equipment_effort_desc:0 "The limits for what equipment can be carried by infantry are constantly being pushed. We will focus on giving our troops the best tools available."

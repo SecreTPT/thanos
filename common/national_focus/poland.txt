@@ -38,6 +38,9 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
+	###################
+	# Infinity Stones #
+	###################
 	focus = {
 		id = POL_Infinity_Stones
 		icon = GFX_goal_poland_infinity_stones
@@ -55,6 +58,26 @@ focus_tree = {
 			    state = 10
 			}
 			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = POL_Infinity_Stones_Collected
+		icon = GFX_goal_poland_infinity_stones_collected
+		prerequisite = { focus = POL_Infinity_Stones_Blue }
+		prerequisite = { focus = POL_Infinity_Stones_Green }
+		prerequisite = { focus = POL_Infinity_Stones_Orange }
+		prerequisite = { focus = POL_Infinity_Stones_Pink }
+		prerequisite = { focus = POL_Infinity_Stones_Purple }
+		prerequisite = { focus = POL_Infinity_Stones_Yellow }
+		y = 2
+		x = 0
+		relative_position_id = POL_Infinity_Stones
+		cost = 5
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			unlock_decision_category_tooltip = Snaps
+			add_manpower = 5000
 		}
 	}
 	focus = {

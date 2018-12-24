@@ -1322,4 +1322,9 @@ spriteTypes = {
 		name = "GFX_goal_poland_thanos_democratic"
 		texturefile = "gfx/interface/goals/goal_poland_thanos_democratic.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_goal_poland_infinity_stones_collected"
+		texturefile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"
+	}
 }
