@@ -39,7 +39,7 @@ focus_tree = {
 			news_event = {
 			    id = thanos.1
 			}
-			set_cosmetic_tag = POL_thanos
+			hidden_effect = {set_cosmetic_tag = POL_thanos}
 		}
 	}
 	###################
@@ -81,7 +81,7 @@ focus_tree = {
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			unlock_decision_category_tooltip = Snaps
-			add_manpower = 5000
+			add_manpower = 15000
 		}
 	}
 	focus = {
@@ -254,7 +254,7 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = fascism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 			#retire_country_leader = yes
 			create_country_leader = {
@@ -287,7 +287,7 @@ focus_tree = {
 			}
 			set_politics = {
 				ruling_party = communism
-				elections_allowed = yes
+				elections_allowed = no
 			}
 			#retire_country_leader = yes
 			create_country_leader = {
@@ -634,4 +634,3 @@ focus_tree = {
 		}
 	}
 }
-#focus_generic_industry_3
