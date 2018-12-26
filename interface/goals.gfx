@@ -1291,8 +1291,8 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_goal_poland_thanos_military_tank"
-		texturefile = "gfx/interface/goals/goal_poland_thanos_military_tank.dds"
+		name = "GFX_goal_poland_thanos_military"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military.dds"
 	}
 	
 	SpriteType = { 
