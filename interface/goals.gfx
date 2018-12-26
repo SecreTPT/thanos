@@ -1248,6 +1248,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_jap_zero.dds"
 	}
 	
+	# Thanos
+	
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos"
 		texturefile = "gfx/interface/goals/goal_poland_thanos.dds"
@@ -1290,22 +1292,27 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_military_tank"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_tank.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military_tank.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_military_tank"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military_tank.dds"
 	}
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_military_car"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_car.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military_car.dds"
 	}
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_military_plane"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_plane.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military_plane.dds"
 	}
 
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_military_boat"
-		texturefile = "gfx/interface/goals/GFX_goal_poland_thanos_military_boat.dds"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_military_boat.dds"
 	}
 
 	SpriteType = { 
@@ -1327,4 +1334,20 @@ spriteTypes = {
 		name = "GFX_goal_poland_infinity_stones_collected"
 		texturefile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_builder"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_builder.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_builder_train"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_builder_train.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_scientist"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_scientist.dds"
+	}
+	
 }

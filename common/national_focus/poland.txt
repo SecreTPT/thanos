@@ -36,6 +36,10 @@ focus_tree = {
 			#}
 			#hold_election = POL
 			add_political_power = 100
+			news_event = {
+			    id = thanos.1
+			}
+			set_cosmetic_tag = POL_thanos
 		}
 	}
 	###################
@@ -353,6 +357,7 @@ focus_tree = {
 				planning_skill = 10
 				logistics_skill = 10
 			}
+			army_experience = 20
 		}
 	}
 	focus = {
@@ -447,4 +452,186 @@ focus_tree = {
 			}
 		}
 	}
+	################
+	#Builder Thanos#
+	################
+	focus = {
+		id = POL_Builder_Thanos
+		icon = GFX_goal_poland_thanos_builder
+		prerequisite = { focus = POL_Thanos }
+		y = 1
+		x = 20
+		relative_position_id = POL_Thanos
+		cost = 5
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = POL_Builder_Thanos_Scientist
+		icon = GFX_goal_poland_thanos_scientist
+		prerequisite = { focus = POL_Builder_Thanos }
+		y = 1
+		x = -2
+		relative_position_id = POL_Builder_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = POL_Builder_Thanos_Train
+		icon = GFX_goal_poland_thanos_builder_train
+		prerequisite = { focus = POL_Builder_Thanos }
+		y = 1
+		x = 0
+		relative_position_id = POL_Builder_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_Builder_Thanos_Industry
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = POL_Builder_Thanos }
+		y = 1
+		x = 2
+		relative_position_id = POL_Builder_Thanos
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
 }
+#focus_generic_industry_3

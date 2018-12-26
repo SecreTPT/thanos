@@ -1,4 +1,11 @@
 ﻿l_english:
+ thanos.1.t:0 "Thanos arrives in Poland"
+ thanos.1.d:0 "The people of Poland woke up this morning to a being who calls himself Thanos. Thanos, born in one of Saturn's moons, aspires to control the universe and what he needs is here on Earth. As long as we cede power to Thanos, he will guide us to greatness."
+ thanos.1.a1:0 "He has arrived"
+ thanos.2.t:0 "[Root.GetName] snapped"
+ thanos.2.d:0 "It was to the suprise of [Root.GetLeader] that a hundred thousand men vanished from existence, along with some resources, in the matter of seconds. Conspiracy theorists point the finger to Thanos and his gauntlet while the official response is that those men deserted."
+ thanos.2.a1:0 "Perfectly Balanced"
+ thanos.2.a2:0 "At what cost?"
  germany.4.t:0 "Anschluss"
  germany.4.d:0 "Repeated uprisings in Austria clearly show that the people there long to be united with our Reich. It is now time to take action and allow the will of the people to be made manifest."
  germany.4.a:0 "How can anyone say that Austria is not German?!"

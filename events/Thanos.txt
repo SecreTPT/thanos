@@ -1,0 +1,54 @@
+add_namespace = thanos
+news_event = {
+        
+	id = thanos.1 
+    title = thanos.1.t # The localisable text that appears as a header
+    desc = thanos.1.d # The localisable main text body that appears
+	picture = GFX_news_event_thanos_arrival # Image displayed alongside the text.
+
+	is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	}
+	option = { # This is an example of an option that has no function
+		name = thanos.1.a1 # The localisable text that appears on the button.
+	}
+}
+news_event = {
+        
+	id = thanos.2
+    title = thanos.2.t # The localisable text that appears as a header
+    desc = thanos.2.d # The localisable main text body that appears
+	picture = GFX_news_event_thanos_snapped # Image displayed alongside the text.
+
+	is_triggered_only = yes # Optional : if set to "yes" the event will only occur by command
+
+	fire_only_once = no # Optional : if set to "yes" the event will never occur more than once
+	major = yes # Optional : if set to "yes" every country in the world will see this event
+
+	immediate = { # Optional : all the following will occur once the event occurs
+	}
+	
+
+	option = { # This is an example of an option that has no function
+		trigger = {
+			OR = {
+				has_war_together_with = POL
+				is_in_faction_with = POL
+				tag = POL
+			}
+		}
+		name = thanos.2.a1 # The localisable text that appears on the button.
+	}
+	option = {
+		trigger = {
+			has_war_with = POL
+			NOT = {is_in_faction_with = POL}
+			NOT ={tag = POL}
+		}
+		name = thanos.2.a2 # The localisable text that appears on the button.
+	}
+}

@@ -41,6 +41,9 @@ Snap_defensive = {
 
 		complete_effect = {
 			FROM = {
+				news_event = {
+			    	id = thanos.2
+				}
 				add_manpower = -100000
 				#Remove Oil
 				random_owned_state = {
@@ -157,7 +160,11 @@ Snap_offensive = {
 		}
 
 		complete_effect = {
+
 			FROM = {
+				news_event = {
+			    	id = thanos.2
+				}
 				add_manpower = -100000
 				#Remove Oil
 				random_owned_state = {
