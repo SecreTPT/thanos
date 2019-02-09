@@ -1,8 +1,8 @@
 ﻿l_english:
  #Mod decisions
- Snap_defensive:0 "Snap [From.GetName]"
+ Snap_defensive:0 "Snap [From.GetName] (defensive war)"
  Snap_defensive_desc:0 "Thanos snaps his fingers while looking at a [From.GetAdjective] painting."
- Snap_offensive:0 "Snap [From.GetName]"
+ Snap_offensive:0 "Snap [From.GetName] (offensive war)"
  Snap_offensive_desc:0 "Thanos snaps his fingers while looking at a [From.GetAdjective] painting."
 
  form_eu_netherlands_required_states_tt:0 "Controls all §YDutch§! states in Europe."
