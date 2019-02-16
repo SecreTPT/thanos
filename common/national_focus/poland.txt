@@ -334,6 +334,53 @@ focus_tree = {
 			#hold_election = POL
 		}
 	}
+	focus = {
+		id = POL_Politics_Thanos_Youth
+		icon = GFX_goal_poland_thanos_youth
+		prerequisite = { focus = POL_Politics_Thanos_Fascist }
+		y = 1
+		x = 0
+		relative_position_id = POL_Politics_Thanos_Fascist
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = POL_thanos_youth
+		}
+	}
+	focus = {
+		id = POL_Politics_Thanos_Personality_Cult
+		icon = GFX_goal_poland_thanos_personality_cult
+		prerequisite = { focus = POL_Politics_Thanos_Communist }
+		y = 1
+		x = 0
+		relative_position_id = POL_Politics_Thanos_Communist
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = POL_thanos_personality_cult
+			add_stability = 0.05
+			set_rule = {
+			    can_use_kamikaze_pilots = yes
+			}
+		}
+	}
+	focus = {
+		id = POL_Politics_Thanos_Wall
+		icon = GFX_goal_poland_thanos_wall
+		prerequisite = { focus = POL_Politics_Thanos_Democratic }
+		y = 1
+		x = 0
+		relative_position_id = POL_Politics_Thanos_Democratic
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = POL_thanos_personality_wall
+			add_stability = 0.05
+		}
+	}
 	#################
 	#Military Thanos#
 	#################

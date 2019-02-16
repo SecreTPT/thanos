@@ -1349,5 +1349,19 @@ spriteTypes = {
 		name = "GFX_goal_poland_thanos_scientist"
 		texturefile = "gfx/interface/goals/goal_poland_thanos_scientist.dds"
 	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_youth"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_youth.dds"
+	}
 	
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_personality_cult"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_personality_cult.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_poland_thanos_wall"
+		texturefile = "gfx/interface/goals/goal_poland_thanos_wall.dds"
+	}
 }

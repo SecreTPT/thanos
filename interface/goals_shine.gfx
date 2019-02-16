@@ -65,6 +65,14 @@ spriteTypes = {
 			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_democratic.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
 			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_democratic.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
 	}
+	SpriteType = { name = "GFX_goal_poland_thanos_youth_shine" texturefile = "gfx/interface/goals/goal_poland_thanos_youth.dds"   effectFile = "gfx/FX/buttonstate.lua"		legacy_lazy_load = no
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_youth.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_youth.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+	}
+	SpriteType = { name = "GFX_goal_poland_thanos_personality_cult_shine" texturefile = "gfx/interface/goals/goal_poland_thanos_personality_cult.dds"   effectFile = "gfx/FX/buttonstate.lua"		legacy_lazy_load = no
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_personality_cult.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_personality_cult.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+	}
 	# Builder Thanos
 	SpriteType = { name = "GFX_goal_poland_thanos_builder_shine" texturefile = "gfx/interface/goals/goal_poland_thanos_builder.dds"   effectFile = "gfx/FX/buttonstate.lua"		legacy_lazy_load = no
 			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_builder.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
@@ -78,7 +86,10 @@ spriteTypes = {
 			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_scientist.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
 			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_scientist.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
 	}
-
+	SpriteType = { name = "GFX_goal_poland_thanos_wall_shine" texturefile = "gfx/interface/goals/goal_poland_thanos_wall.dds"   effectFile = "gfx/FX/buttonstate.lua"		legacy_lazy_load = no
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_wall.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_thanos_wall.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+	}
 	#### Generic continuous goal icons
 
 	SpriteType = {
