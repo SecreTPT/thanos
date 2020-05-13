@@ -61,6 +61,7 @@ focus_tree = {
 			    amount = 50
 			    state = 10
 			}
+			add_war_support = 0.2
 			add_manpower = 100000
 		}
 	}
@@ -77,7 +78,46 @@ focus_tree = {
 		x = 0
 		relative_position_id = POL_Infinity_Stones
 		cost = 5
-		available = {}
+		available = {
+			AND = {
+				OR = {
+					LIT = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = LIT
+					}
+				}
+				OR = {
+					LAT = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = LAT
+					}
+				}
+				OR = {
+					EST = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = EST
+					}
+				}
+				OR = {
+					CZE = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = CZE
+					}
+				}
+				OR = {
+					HUN = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = HUN
+					}
+				}
+				OR = {
+					ROM = { is_puppet_of = ROOT }
+					NOT = {
+						country_exists = ROM
+					}
+				}
+			}
+		}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			unlock_decision_category_tooltip = Snaps
@@ -106,6 +146,10 @@ focus_tree = {
 			    target = LIT
 			}
 		}
+		will_lead_to_war_with = LIT
+		bypass = {
+			NOT = {country_exists = LIT}
+		}
 	}
 	focus = {
 		id = POL_Infinity_Stones_Green
@@ -128,6 +172,10 @@ focus_tree = {
 			    type = puppet_wargoal_focus
 			    target = LAT
 			}
+		}
+		will_lead_to_war_with = LAT
+		bypass = {
+			NOT = {country_exists = LAT}
 		}
 	}
 	focus = {
@@ -152,6 +200,10 @@ focus_tree = {
 			    target = EST
 			}
 		}
+		will_lead_to_war_with = EST
+		bypass = {
+			NOT = {country_exists = EST}
+		}
 	}
 	focus = {
 		id = POL_Infinity_Stones_Pink
@@ -174,6 +226,10 @@ focus_tree = {
 			    type = puppet_wargoal_focus
 			    target = CZE
 			}
+		}
+		will_lead_to_war_with = CZE
+		bypass = {
+			NOT = {country_exists = CZE}
 		}
 	}
 	focus = {
@@ -198,6 +254,10 @@ focus_tree = {
 			    target = HUN
 			}
 		}
+		will_lead_to_war_with = HUN
+		bypass = {
+			NOT = {country_exists = HUN}
+		}
 	}
 	focus = {
 		id = POL_Infinity_Stones_Yellow
@@ -217,6 +277,10 @@ focus_tree = {
 			    target = ROM
 			}
 		}
+		will_lead_to_war_with = ROM
+		bypass = {
+			NOT = {country_exists = ROM}
+		}
 	}
 	#################
 	#Politics Thanos#
@@ -232,8 +296,8 @@ focus_tree = {
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
-			add_stability = 0.05
 			add_political_power = 50
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -249,6 +313,7 @@ focus_tree = {
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
+			add_stability = 0.05
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 1
@@ -282,6 +347,7 @@ focus_tree = {
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
+			add_stability = 0.05
 			add_popularity = {
 			    ideology = communism
 			    popularity = 1
@@ -314,6 +380,7 @@ focus_tree = {
 		available = {}
 		ai_will_do = { factor = 2 }
 		completion_reward = {
+			add_stability = 0.1
 			add_popularity = {
 			    ideology = democratic
 			    popularity = 1
@@ -360,7 +427,7 @@ focus_tree = {
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			add_ideas = POL_thanos_personality_cult
-			add_stability = 0.05
+			add_political_power = 150
 			set_rule = {
 			    can_use_kamikaze_pilots = yes
 			}
@@ -400,7 +467,7 @@ focus_tree = {
 		icon = GFX_goal_poland_thanos_military
 		prerequisite = { focus = POL_Thanos }
 		y = 1
-		x = 14
+		x = 15
 		relative_position_id = POL_Thanos
 		cost = 5
 		available = {}
@@ -430,7 +497,7 @@ focus_tree = {
 		icon = GFX_goal_poland_thanos_military_car
 		prerequisite = { focus = POL_Military_Thanos }
 		y = 1
-		x = -2
+		x = -3
 		relative_position_id = POL_Military_Thanos
 		cost = 10
 		available = {}
@@ -468,7 +535,7 @@ focus_tree = {
 		icon = GFX_goal_poland_thanos_military_boat
 		prerequisite = { focus = POL_Military_Thanos }
 		y = 1
-		x = 2
+		x = 3
 		relative_position_id = POL_Military_Thanos
 		cost = 10
 		available = {}
@@ -492,6 +559,34 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = POL_Military_Thanos_Sanctuary
+		icon = GFX_goal_poland_thanos_military_sanctuary
+		prerequisite = { focus = POL_Military_Thanos_Plane }
+		y = 1
+		x = -1
+		relative_position_id = POL_Military_Thanos_Plane
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.75
+				uses = 3
+				category = light_fighter
+				category = heavy_fighter
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.75
+				uses = 3
+				category = tactical_bomber
+				category = cas_bomber
+			}
+		}
+	}
 	focus = {
 		id = POL_Military_Thanos_Plane
 		icon = GFX_goal_poland_thanos_military_plane
@@ -504,17 +599,32 @@ focus_tree = {
 		ai_will_do = { factor = 2 }
 		completion_reward = {
 			add_tech_bonus = {
-				name = fighter_bonus
+				name = airdoctrine_bonus
 				bonus = 0.75
 				uses = 3
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = air_doctrine
 			}
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = POL_Military_Thanos_Copter
+		icon = GFX_goal_poland_thanos_military_copter
+		prerequisite = { focus = POL_Military_Thanos_Plane }
+		y = 1
+		x = 1
+		relative_position_id = POL_Military_Thanos_Plane
+		cost = 10
+		available = {}
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = airdoctrine_bonus
+				bonus = 0.75
+				uses = 3
+				category = para_tech
+			}
+			air_experience = 25
 		}
 	}
 	################
@@ -525,7 +635,7 @@ focus_tree = {
 		icon = GFX_goal_poland_thanos_builder
 		prerequisite = { focus = POL_Thanos }
 		y = 1
-		x = 20
+		x = 22
 		relative_position_id = POL_Thanos
 		cost = 5
 		available = {}
@@ -552,7 +662,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				ahead_reduction = 0.5
+				ahead_reduction = 1
+				uses = 3
 				category = nuclear
 			}
 			add_tech_bonus = {

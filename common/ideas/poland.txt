@@ -9,7 +9,7 @@ country = {
 		picture = thanos_youth
 		modifier = {
 			conscription = 0.050
-			war_support_factor = 0.05
+			war_support_factor = 0.15
 		}
 	}
 	POL_thanos_personality_cult = {
