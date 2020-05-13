@@ -5,4 +5,6 @@ tags={
 	"Alternative History"
 	"National Focuses"
 }
+picture="thumb.jpg"
 supported_version="1.9.*"
+remote_file_id="1598319773"
