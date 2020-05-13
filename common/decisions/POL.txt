@@ -156,7 +156,7 @@ Snap_offensive = {
 		#days_remove = 1
 		days_re_enable = 10
 
-		cost = 120
+		cost = 110
 
 		modifier = {
 		}
