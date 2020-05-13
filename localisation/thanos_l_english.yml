@@ -66,9 +66,13 @@
  POL_Politics_Thanos_Wall:0 "Thanos Wall"
  POL_Politics_Thanos_Wall_desc:0 "We must build a wall to keep the §bMexicans§! Germans out!"
  POL_thanos_youth:0 "Children of Thanos"
- POL_thanos_youth_desc:0 "We are all children of thanos."
+ POL_thanos_youth_desc:0 "We are all children of Thanos."
  POL_thanos_personality_cult:0 "Thanos Cult of Personality"
  POL_thanos_personality_cult_desc:0 "Thanos is the polish people's true saviour!"
+ #Political advisors
+ POL_ebony_maw:0 "Ebony Maw"
+ POL_black_dwarf:0 "Black Dwarf"
+ POL_corvus_glaive:0 "Corvus Glaive"
  #Mod decisions
  Snap_defensive:0 "Snap [From.GetName] (defensive war)"
  Snap_defensive_desc:0 "Thanos snaps his fingers while looking at a [From.GetAdjective] painting."

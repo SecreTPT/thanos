@@ -81,40 +81,52 @@ focus_tree = {
 		available = {
 			AND = {
 				OR = {
-					LIT = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = LIT
 					}
+					LIT = {is_puppet_of = ROOT}
+					LIT = {is_in_faction_with = ROOT}
+					LIT = {has_capitulated = yes}
 				}
 				OR = {
-					LAT = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = LAT
 					}
+					LAT = {is_puppet_of = ROOT}
+					LAT = {is_in_faction_with = ROOT}
+					LAT = {has_capitulated = yes}
 				}
 				OR = {
-					EST = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = EST
 					}
+					EST = {is_puppet_of = ROOT}
+					EST = {is_in_faction_with = ROOT}
+					EST = {has_capitulated = yes}
 				}
 				OR = {
-					CZE = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = CZE
 					}
+					CZE = {is_puppet_of = ROOT}
+					CZE = {is_in_faction_with = ROOT}
+					CZE = {has_capitulated = yes}
 				}
 				OR = {
-					HUN = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = HUN
 					}
+					HUN = {is_puppet_of = ROOT}
+					HUN = {is_in_faction_with = ROOT}
+					HUN = {has_capitulated = yes}
 				}
 				OR = {
-					ROM = { is_puppet_of = ROOT }
 					NOT = {
 						country_exists = ROM
 					}
+					ROM = {is_puppet_of = ROOT}
+					ROM = {is_in_faction_with = ROOT}
+					ROM = {has_capitulated = yes}
 				}
 			}
 		}
@@ -555,8 +567,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
-				bonus = 0.5
-				uses = 2
+				bonus = 0.75
+				uses = 3
 				technology = convoy_interdiction_ti
 				technology = unrestricted_submarine_warfare
 				technology = wolfpacks

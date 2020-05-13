@@ -184,6 +184,10 @@ spriteTypes = {
 		name = "GFX_goal_poland_infinity_stones_collected"
 		texturefile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"
 	}
+	SpriteType = { name = "GFX_goal_poland_infinity_stones_collected_shine" texturefile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"   effectFile = "gfx/FX/buttonstate.lua"		legacy_lazy_load = no
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = -90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+			animation = { animationmaskfile = "gfx/interface/goals/goal_poland_infinity_stones_collected.dds"    animationtexturefile = "gfx/interface/goals/shine_overlay.dds"   animationrotation = 90.0 animationlooping = no	animationtime = 0.75 animationdelay = 0	animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+	}
 	# Builder Thanos
 	SpriteType = { 
 		name = "GFX_goal_poland_thanos_builder"
@@ -258,7 +262,6 @@ spriteTypes = {
 
 
 	#Ideas
-	# Thanos Sprites
 	SpriteType = {
 		name = "GFX_idea_thanos_youth"
 		texturefile = "gfx/interface/ideas/thanos_youth.dds"	
@@ -267,7 +270,18 @@ spriteTypes = {
 		name = "GFX_idea_thanos_personality_cult"
 		texturefile = "gfx/interface/ideas/thanos_personality_cult.dds"	
 	}
-
+	SpriteType = {
+		name = "GFX_idea_political_advisor_thanos_ebony_maw"
+		texturefile = "gfx/interface/ideas/political_advisor_thanos_ebony_maw.dds"	
+	}
+	SpriteType = {
+		name = "GFX_idea_political_advisor_thanos_black_dwarf"
+		texturefile = "gfx/interface/ideas/political_advisor_thanos_black_dwarf.dds"	
+	}
+	SpriteType = {
+		name = "GFX_idea_political_advisor_thanos_corvus_glaive"
+		texturefile = "gfx/interface/ideas/political_advisor_thanos_corvus_glaive.dds"	
+	}
 	#Events
 	spriteType = {
 		name = "GFX_news_event_thanos_arrival"

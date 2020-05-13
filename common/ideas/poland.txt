@@ -140,7 +140,34 @@ country = {
 
 
 political_advisor = {
+	POL_ebony_maw = {
 
+		picture = political_advisor_thanos_ebony_maw
+
+		allowed = {
+			original_tag = POL
+		}
+		available = {
+			has_completed_focus = POL_Thanos
+		}
+		traits = { backroom_backstabber }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	POL_black_dwarf = {
+
+		picture = political_advisor_thanos_black_dwarf
+			
+		allowed = {
+			original_tag = POL
+		}
+		available = {
+			has_completed_focus = POL_Thanos
+		}
+		traits = { prince_of_terror }
+	}
 	POL_roman_dmowski = {
 
 		picture = generic_fascist_demagogue_eastern_european_2d
@@ -258,7 +285,25 @@ theorist = {
 	# MILITARY
 	army_chief = {
 				
-		
+		POL_corvus_glaive = {
+			
+			picture = political_advisor_thanos_corvus_glaive
+			
+			allowed = {
+				original_tag = POL
+			}
+			
+			available = {
+				has_completed_focus = POL_Thanos
+			}
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
 		POL_edward_rydz_smigly = {
 			
 			picture = generic_army_europe_1
