@@ -45,7 +45,7 @@ Snap_defensive = {
 			    	id = thanos.2
 				}
 				set_temp_variable = { temp1 = manpower }
-				multiply_temp_variable = { temp1 = -0.5 }
+				multiply_temp_variable = { temp1 = -0.75 }
 				add_manpower = temp1
 				#Remove Oil
 				random_owned_state = {
@@ -167,7 +167,7 @@ Snap_offensive = {
 			    	id = thanos.2
 				}
 				set_temp_variable = { temp1 = manpower }
-				multiply_temp_variable = { temp1 = -0.5 }
+				multiply_temp_variable = { temp1 = -0.75 }
 				add_manpower = temp1
 				#Remove Oil
 				random_owned_state = {
